@@ -1,8 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter as Router, Route  } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom'
 import Home from './pages/Home'
 import Survey from './pages/Survey'
+console.log(React.version);
 
  
 
@@ -10,12 +11,10 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
     <Router>
-        <Route path="/">
-            <Home />
-        </Route>
-        <Route path="/survey">
-            <Survey />
-        </Route>
+        <Routes>
+            <Route path="/" element={<Home />}/>
+            <Route path="c" element={<Survey />} />
+        </Routes>
     </Router>
 </React.StrictMode>
 )
