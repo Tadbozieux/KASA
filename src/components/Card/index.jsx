@@ -21,9 +21,7 @@ Card.propTypes = {
 }
  
 Card.defaultProps = {
-    label: '',
-    title: '',
-    picture: DefaultPicture,
-  }
+    title: 'Mon titre par défaut',
+}
 
 export default Card
