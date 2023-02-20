@@ -1,27 +1,41 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import colors from '../../utils/style/colors'
+import logo from '../../../src/LOGOKASA.png'
+import "./Header.css"
 
 const StyledLink = styled(Link)`
-    padding: 15px;
-    color: #8186a0;
-    text-decoration: none;
-    font-size: 18px;
+height: 68px;
+width: 1240px;
+left: 100px;
+top: 40px;
+border-radius: 0px;
+
+
+
+
+
+
     ${(props) =>
         props.$isFullLink &&
-        `color: white; border-radius: 30px; background-color: ${colors.primary};`}
+        `color: white; border-radius: 300px; background-color: ${colors.primary};`}
 
 `
 
 function Header() {
     return (
-        <nav>
-            <StyledLink to="/">Accueil</StyledLink>
-            <StyledLink to="/survey/1" $isFullLink>
-    Faire le test
-</StyledLink>
-            <StyledLink to="/freelances">Profils</StyledLink>
+        <header className='headercss'>
+            <Link to="/">
+                <img className="logo-Header" src={logo} alt="logo de Kasa" />
+            </Link>
+            <nav className='navcss'>
+                <StyledLink to="/">Accueil</StyledLink>
+                <StyledLink to="/survey" $isFullLink>
+                A Propos
+                </StyledLink>
+                <StyledLink to="/freelances">Profils</StyledLink>
         </nav>
+        </header>
     )
 }
 
