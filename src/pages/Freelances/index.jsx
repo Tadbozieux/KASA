@@ -36,6 +36,7 @@ function Freelances() {
                   <Card
                       key={`${profile.name}-${index}`}
                       label={profile.jobTitle}
+                      picture={profile.picture}
                       title={profile.name}
                   />
               ))}
