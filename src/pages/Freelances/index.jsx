@@ -20,6 +20,8 @@ const freelanceProfiles = [
     },
 ]
 
+
+
 const CardsContainer = styled.div`
     display: grid;
     gap: 24px;

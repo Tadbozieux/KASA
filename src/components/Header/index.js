@@ -18,7 +18,7 @@ border-radius: 0px;
 
     ${(props) =>
         props.$isFullLink &&
-        `color: white; border-radius: 300px; background-color: ${colors.primary};`}
+        `color: white; border-radius: 300px; color: ${colors.primary}; `}
 
 `
 
@@ -33,7 +33,7 @@ function Header() {
                 <StyledLink to="/survey" $isFullLink>
                 A Propos
                 </StyledLink>
-                <StyledLink to="/freelances">Profils</StyledLink>
+                {/* <StyledLink to="/freelances">Profils</StyledLink> */}
         </nav>
         </header>
     )
