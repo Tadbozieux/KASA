@@ -1,14 +1,14 @@
 .headercss{
     display: flex;
     justify-content: space-between;
-    
+    margin: 5%;
     
 }
 
 
 
 .navcss{
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: space-between;
    
