@@ -1,6 +1,6 @@
 import datas from '../../data/data'
 import Card from '../Card/index'
-
+import './gallery.css'
 
 function Gallery() {
 

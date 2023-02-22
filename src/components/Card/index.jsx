@@ -4,12 +4,14 @@ import styled from 'styled-components'
 
 
 const CardImage = styled.img`
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
+   
+   
+    
+height: 250px;
+    object-fit: cover;
 `
  
-function Card({ label, title, cover }) {
+function Card({  title, cover }) {
     return (
         <CardWrapper>
             
@@ -29,12 +31,14 @@ Card.defaultProps = {
     title: 'Mon titre par défaut',
 }
 const CardWrapper = styled.div`
+    
     display: flex;
     flex-direction: column;
     padding: 15px;
     background-color: ${colors.backgroundLight};
     border-radius: 30px;
     width: 350px;
+    height: 300px;
     transition: 200ms;
     &:hover {
         cursor: pointer;
