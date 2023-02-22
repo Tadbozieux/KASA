@@ -2,22 +2,18 @@ import PropTypes from 'prop-types'
 import colors from '../../utils/style/colors'
 import styled from 'styled-components'
 
-const CardLabel = styled.span`
-    color: #5843e4;
-    font-size: 22px;
-    font-weight: bold;
-`
+
 const CardImage = styled.img`
     height: 80px;
     width: 80px;
     border-radius: 50%;
 `
  
-function Card({ label, title, picture }) {
+function Card({ label, title, cover }) {
     return (
         <CardWrapper>
-            <CardLabel>{label}</CardLabel>
-            <CardImage src={picture} alt="freelance" />
+            
+            <CardImage src={cover} alt="freelance" />
             <span>{title}</span>
         </CardWrapper>
     )
