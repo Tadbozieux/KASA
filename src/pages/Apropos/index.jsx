@@ -42,7 +42,7 @@ function Apropos() {
             </div>
         </div>
         <div>
-            <button type="button" class="collapsible">Securité</button>
+            <button type="button" class="collapsible">Securite</button>
             <div class="content">
             <p>Lorem ipsum...</p>
             </div>
