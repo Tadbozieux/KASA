@@ -1,0 +1,18 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.logoFooter{
+    padding: 2%;
+    width: 10%;
+    margin: auto;
+}
+
+
+.C2020{
+    width: 20%;
+    margin: auto;
+    padding: 2%;
+}
