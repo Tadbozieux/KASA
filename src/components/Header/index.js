@@ -30,7 +30,7 @@ function Header() {
             </Link>
             <nav className='navcss'>
                 <StyledLink to="/">Accueil</StyledLink>
-                <StyledLink to="/survey" $isFullLink>
+                <StyledLink to="/Apropos" $isFullLink>
                 A Propos
                 </StyledLink>
                 {/* <StyledLink to="/freelances">Profils</StyledLink> */}
