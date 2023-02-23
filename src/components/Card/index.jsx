@@ -14,7 +14,6 @@ height: 250px;
 function Card({  title, cover }) {
     return (
         <CardWrapper>
-            
             <CardImage src={cover} alt="freelance" />
             <span>{title}</span>
         </CardWrapper>
@@ -35,9 +34,10 @@ const CardWrapper = styled.div`
     display: flex;
     flex-direction: column;
     padding: 15px;
-    background-color: ${colors.backgroundLight};
-    border-radius: 30px;
+    background:linear-gradient(180deg,  rgba(255,110,110,1) 0%,  rgba(214,55,55,1) 75%, rgba(149,81,81,1) 100%); 
+    border-radius: 8px;
     width: 350px;
+    margin:15px;
     height: 300px;
     transition: 200ms;
     &:hover {
