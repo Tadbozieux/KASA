@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom'
 import Home from './pages/Home'
 import Apropos from './pages/Apropos'
-import Freelances from './pages/Freelances'
 import Header from './components/Header'
 import Error from './components/Error'
 import { createGlobalStyle } from 'styled-components'
@@ -24,7 +23,6 @@ root.render(
             <Routes>
                 <Route exact path="/" element={<Home />}/>
                 <Route path="Apropos" element={<Apropos />} />
-                <Route  path='Freelances' element={<Freelances/>}/>
                 <Route path="*" element={<Error/>}/> 
             </Routes>
     </Router>

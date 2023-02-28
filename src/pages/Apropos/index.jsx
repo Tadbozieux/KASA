@@ -1,36 +1,22 @@
-
 import "./Apropos.css"
 
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 
 function Apropos() {
   const { questionNumber } = useParams();
-//Le code est encapsulé dans une fonction qui est appelée lorsque l'événement window.onload est déclenché
-// Cela garantit que le code ne s'exécute qu'après le chargement complet de la page.
-  useEffect(() => {
-    window.onload = function () {  
-      let coll = document.getElementsByClassName('collapsible');
-      let i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener('click', function () {
-          this.classList.toggle('active');
-          let content = this.nextElementSibling;
-          if (content.style.display === 'block') {
-            content.style.display = 'none';
-          } else {
-            content.style.display = 'block';
-          }
-        });
-      }
-    };
-  }, []);
+  
+  const handleCollapsibleClick = (e) => {
+    const collapsible = e.currentTarget;
+    collapsible.classList.toggle('active');
+    const content = collapsible.nextElementSibling;
+    content.style.display = content.style.display === 'block' ? 'none' : 'block';
+  }
 
   return (
     <div>
       <div>
-        <button type="button" className="collapsible">
+        <button type="button" className="collapsible" onClick={handleCollapsibleClick}>
           Fiabilite
         </button>
         <div className="content">
@@ -38,7 +24,7 @@ function Apropos() {
         </div>
       </div>
       <div>
-        <button type="button" className="collapsible">
+        <button type="button" className="collapsible" onClick={handleCollapsibleClick}>
           Respect
         </button>
         <div className="content">
@@ -46,7 +32,7 @@ function Apropos() {
         </div>
       </div>
       <div>
-        <button type="button" className="collapsible">
+        <button type="button" className="collapsible" onClick={handleCollapsibleClick}>
           Service
         </button>
         <div className="content">
@@ -54,7 +40,7 @@ function Apropos() {
         </div>
       </div>
       <div>
-        <button type="button" className="collapsible">
+        <button type="button" className="collapsible" onClick={handleCollapsibleClick}>
           Securite
         </button>
         <div className="content">
