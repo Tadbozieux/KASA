@@ -6,12 +6,17 @@ import { useParams } from 'react-router-dom';
 function Apropos() {
   const { questionNumber } = useParams();
   
-  const handleCollapsibleClick = (e) => {
-    const collapsible = e.currentTarget;
-    collapsible.classList.toggle('active');
-    const content = collapsible.nextElementSibling;
-    content.style.display = content.style.display === 'block' ? 'none' : 'block';
-  }
+  // Cette fonction est appelée lorsque l'utilisateur clique sur un collapsible
+const handleCollapsibleClick = (e) => {
+  // Récupère le bouton collapsible sur lequel l'utilisateur a cliqué
+  const collapsible = e.currentTarget;
+  // Ajoute ou enlève la classe "active" au bouton collapsible pour styliser le bouton en conséquence
+  collapsible.classList.toggle('active');
+  // Récupère l'élément qui suit directement le bouton collapsible, qui est le contenu qui sera caché ou montré
+  const content = collapsible.nextElementSibling;
+  // Change l'état d'affichage du contenu en fonction de son état actuel
+  content.style.display = content.style.display === 'block' ? 'none' : 'block';
+}
 
   return (
     <div>
