@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom'
-import Home from './pages/Home'
-import Apropos from './pages/Apropos'
-import Header from './components/Header'
-import Error from './components/Error'
+import Home from './pages/Home/Home'
+import Apropos from './pages/Apropos/Apropos'
+import Header from './components/Header/Header'
+import Error from './components/Error/Error'
 import { createGlobalStyle } from 'styled-components'
 console.log(React.version);
 
