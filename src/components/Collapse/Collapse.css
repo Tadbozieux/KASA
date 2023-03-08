@@ -1,25 +1,54 @@
-/* Style the button that is used to open and close the collapsible content */
+.totalCollapsible{
+  justify-content: center;
+}
+
+.blocCollapsible{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+
 .collapsible {
-    background-color: #eee;
+  width: 80%;
+  height: auto;
+    background-color: rgba(255, 96, 96, 1);
     color: #444;
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
+    padding: 14px;
+    margin: auto;
+  display: flex;
+
     text-align: left;
-    /* outline: none; */
-    font-size: 15px;
+    font-size: 13px;
+    color: white;
+    border-radius: 5px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .collapsible h2{
+    margin: 0;
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
-    background-color: #ccc;
+    background-color: rgb(250, 110, 110);;
   }
   
   /* Style the collapsible content. Note: hidden by default */
   .content {
+    width: 80%;
+    margin: auto;
     padding: 0 18px;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
+    color: rgb(255, 144, 144);
+    font-size: 1.5rem;
+  }
+
+
+  .incone{
+    width: 20%;
+    color: beige;
   }

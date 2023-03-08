@@ -6,6 +6,10 @@ import Apropos from './pages/Apropos/Apropos'
 import Header from './components/Header/Header'
 import Error from './components/Error/Error'
 import { createGlobalStyle } from 'styled-components'
+import './index.css'
+// get our fontawesome imports
+
+
 console.log(React.version);
 
 const GlobalStyle = createGlobalStyle`

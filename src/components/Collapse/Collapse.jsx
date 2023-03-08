@@ -2,6 +2,9 @@ import './Collapse.css'
 import '../../App.css';
 import { useParams } from 'react-router-dom';
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'  // Importation Chevron FontAwesome
+import {faChevronUp} from '@fortawesome/free-solid-svg-icons';
+
 
 function Collapse() {
     const { questionNumber } = useParams();
@@ -19,37 +22,41 @@ function Collapse() {
   }
   
     return (
-      <div>
-        <div>
-          <button type="button" className="collapsible" onClick={handleCollapsibleClick}>
-            Fiabilite
-          </button>
+      <div className='totalCollapsible'>
+        <div className='blocCollapsible'>
+          <div type="button" className="collapsible" onClick={handleCollapsibleClick}>
+            <h2>Fiabilite</h2>
+            <FontAwesomeIcon icon={faChevronUp} />
+          </div>
           <div className="content">
-            <p>Lorem ipsum...</p>
+            <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
           </div>
         </div>
-        <div>
-          <button type="button" className="collapsible" onClick={handleCollapsibleClick}>
-            Respect
-          </button>
+        <div className='blocCollapsible'>
+          <div type="button" className="collapsible" onClick={handleCollapsibleClick}>
+            <h2>Respect</h2>
+            <FontAwesomeIcon icon={faChevronUp} />
+          </div>
           <div className="content">
-            <p>Lorem ipsum...</p>
+            <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
           </div>
         </div>
-        <div>
-          <button type="button" className="collapsible" onClick={handleCollapsibleClick}>
-            Service
-          </button>
+        <div className='blocCollapsible'>
+          <div type="button" className="collapsible" onClick={handleCollapsibleClick}>
+            <h2>Service</h2>
+            <FontAwesomeIcon icon={faChevronUp} />
+          </div>
           <div className="content">
-            <p>Lorem ipsum...</p>
+            <p>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question.</p>
           </div>
         </div>
-        <div>
-          <button type="button" className="collapsible" onClick={handleCollapsibleClick}>
-            Securite
-          </button>
+        <div className='blocCollapsible'>
+          <div type="button" className="collapsible" onClick={handleCollapsibleClick}>
+            <h2>Sécurité</h2>
+            <FontAwesomeIcon icon={faChevronUp} />
+          </div>
           <div className="content">
-            <p>Lorem ipsum...</p>
+            <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.</p>
           </div>
         </div>
       </div>
