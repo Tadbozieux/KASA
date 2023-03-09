@@ -30,23 +30,30 @@
     margin: 0;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) 
   .active, .collapsible:hover {
     background-color: rgb(250, 110, 110);;
-  }
+  }*/
   
   /* Style the collapsible content. Note: hidden by default */
   .content {
     width: 80%;
-    margin: auto;
-    padding: 0 18px;
-    display: none;
+    max-height: 0;
     overflow: hidden;
+  transition: max-height 0.3s ease-out;
+     margin: auto;
+    padding: 0 18px;
+
+   
     background-color: #f1f1f1;
     color: rgb(255, 144, 144);
-    font-size: 1.5rem;
+    font-size: 1.5rem; 
   }
 
+  .content.active {
+    max-height: 500px; /* ou une valeur suffisamment grande pour afficher tout le contenu */
+    transition: max-height 0.3s ease-in;
+  }
 
   .incone{
     width: 20%;
