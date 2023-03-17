@@ -3,15 +3,15 @@ import '../../App.css';
 import { useParams } from 'react-router-dom';
 import React, { useState } from 'react';
 
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'  //import FontAwesome REACT
 import {faChevronUp} from '@fortawesome/free-solid-svg-icons';
 import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
 
 function Collapse() {
-const { questionNumber } = useParams();
-const [collapsed, setCollapsed] = useState(Array(4).fill(false));
+
+const [collapsed, setCollapsed] = useState(Array(4).fill(false));   // declaration de l'etat
     
-const handleCollapsibleClick = (index) => {
+const handleCollapsibleClick = (index) => {     // en focntion de l'element du tableau changement etat
   const newCollapsed = [...collapsed];
   newCollapsed[index] = !newCollapsed[index];
   setCollapsed(newCollapsed);
