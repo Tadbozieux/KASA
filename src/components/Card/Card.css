@@ -44,16 +44,14 @@
     } */
 
 
-    .Card {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        width: 30%;
+.Card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 30%;
     height: 340px;
-        padding: 15px;
-       
-  border-radius: 8px;
-     width: 350px;
+    border-radius: 8px;
+    width: 350px;
     margin:15px;
     overflow: hidden;
     transition : box-shadow 0.2s ease-in-out;
@@ -99,5 +97,7 @@
     right: 20px;
     font-weight: 500;
     font-size: clamp(12px, 3vw, 18px);
+    text-decoration: none;
+    color: white;
     
 }
