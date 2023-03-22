@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import VectorUp from '../../assets/VectorUp.svg'
 import VectorDown from '../../assets/VectorDown.svg'
 
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'  //import FontAwesome REACT
+
 
 
 function Collapse() {

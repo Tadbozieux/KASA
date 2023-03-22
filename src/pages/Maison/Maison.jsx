@@ -1,13 +1,12 @@
 import React from "react"
-import { NavLink } from "react-router-dom"
+
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react"
 // import "./Houses.css"
 import datas from '../../data/data'
 import Carrousel from "../../components/Carrousel/Carrousel"
-import Infos from "../../components/Infos/Infos"
-import Error from "../Error/Error"
-import Collapse from "../../components/Collapse/Collapse"
+
+import CollapseMaison from "../../components/CollapseMaison/CollapseMaison"
 import redstar from '../../assets/redstar.svg'
 import greystar from '../../assets/greystar.svg'
 
@@ -64,14 +63,14 @@ export default function Accomodation() {
 						</div>
 					</div>
 				</div>
-				<div className="accomodation_collapse">
-					<div className="accomodation_collapse_item">
-						<Collapse title={'Description'} content={description} />	
-					</div>
-					<div className="accomodation_collapse_item">
-						<Collapse title={'Équipements'} content={equipments}/>
-					</div>	
-				</div>
+				<div className="houseCollapses">
+            <div className="houseDetails">
+              <CollapseMaison title="Description" content={description} />
+            </div>
+            <div className="houseDetails">
+              <CollapseMaison title="Équipements" content={equipments} />
+            </div>
+          </div>
 			</main>
 			
 		</>
