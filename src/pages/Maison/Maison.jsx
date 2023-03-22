@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 // import "./Houses.css"
 import datas from '../../data/data'
 import Carrousel from "../../components/Carrousel/Carrousel"
-
+import Footer from '../../components/footer/Footer';
 import CollapseMaison from "../../components/CollapseMaison/CollapseMaison"
 import redstar from '../../assets/redstar.svg'
 import greystar from '../../assets/greystar.svg'
@@ -72,7 +72,7 @@ export default function Accomodation() {
             </div>
           </div>
 			</main>
-			
+			<Footer/>
 		</>
 	)
 }
