@@ -29,7 +29,7 @@ root.render(
             <Routes>
                 <Route exact path="/" element={<Home />}/>
                 <Route path="Apropos" element={<Apropos />} />
-                <Route path="/Gallery/:id" render={(props) => <Maison {...props} />} ></Route>
+                <Route path="/Gallery/:id" element={<Maison />} />
                 <Route path="*" element={<Error/>}/> 
             </Routes>
     </Router>

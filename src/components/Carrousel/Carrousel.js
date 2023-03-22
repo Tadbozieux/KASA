@@ -1,73 +1,43 @@
-import React from "react"
-import PropTypes from "prop-types"
-// import "./Carrousel.css"
+import './Carroussel.css'
+import ArrowRight from '../../assets/chevron_carousel_right.png'
+import ArrowLeft from '../../assets/chevron_carousel_left.png'
+import { useState } from 'react'
 
-export default class Carrousel extends React.Component {
-  constructor(props) {
-    super(props)
+export default function Slider({imageSlider}) {
 
-    this.state = {
-      currentImageIndex: 0,
+    const [currentIndex, setCurrentIndex] = useState(0)
+
+    const nextSlide = () => {
+        setCurrentIndex(currentIndex + 1)
+        if(currentIndex === imageSlider.length - 1)
+            setCurrentIndex(0)
     }
 
-    this.nextSlide = this.nextSlide.bind(this)
-    this.previousSlide = this.previousSlide.bind(this)
-  }
+    const prevSlide = () => {
+        setCurrentIndex(currentIndex - 1)
+        if(currentIndex === 0)
+            setCurrentIndex(imageSlider.length - 1)
+    }
 
-  previousSlide() {
-    const lastIndex = this.props.imgUrls.length - 1
-    const { currentImageIndex } = this.state
-    const shouldResetIndex = currentImageIndex === 0
-    const index = shouldResetIndex ? lastIndex : currentImageIndex - 1
-
-    this.setState({
-      currentImageIndex: index,
-    })
-  }
-
-  nextSlide() {
-    const lastIndex = this.props.imgUrls.length - 1
-    const { currentImageIndex } = this.state
-    const shouldResetIndex = currentImageIndex === lastIndex
-    const index = shouldResetIndex ? 0 : currentImageIndex + 1
-
-    this.setState({
-      currentImageIndex: index,
-    })
-  }
-
-  render() {
     return (
-      <div className="carrousel">
-        <div className="image-zoom">
-          <img
-            className="img-Carrousel"
-            src={this.props.imgUrls[this.state.currentImageIndex]}
-            alt=""
-          />
-        </div>
-
-        <p className="compt">
-          {this.state.currentImageIndex + 1}/{this.props.imgUrls.length}
-        </p>
-        {this.props.imgUrls.length > 1 ? (
-          <div>
-            <i
-              className="fas fa-chevron-left"
-              onClick={() => this.previousSlide()}
-            ></i>
-            <i
-              className="fas fa-chevron-right"
-              onClick={() => this.nextSlide()}
-            ></i>
-          </div>
-        ) : (
-          ""
-        )}
-      </div>
+        <section style={{backgroundImage : `url(${imageSlider[currentIndex]})`}} className='carousel'>
+            {imageSlider.length > 1 && 
+                <>
+                    <img 
+                        className='carousel_arrow carousel_arrow_right' 
+                        src={ArrowRight} 
+                        alt="show next slider" 
+                        onClick={nextSlide}
+                    />
+                    <img 
+                        className='carousel_arrow carousel_arrow_left' 
+                        src={ArrowLeft} 
+                        alt="show previous slider" 
+                        onClick={prevSlide}
+                    />
+                    <p className='slideCount'>{currentIndex + 1} / {imageSlider.length}</p>
+                </>
+            } 
+        </section>
     )
-  }
-}
-Carrousel.propTypes = {
-  imgUrls: PropTypes.arrayOf(PropTypes.string),
 }

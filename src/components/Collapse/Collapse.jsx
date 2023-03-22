@@ -2,10 +2,11 @@ import './Collapse.css';
 import '../../App.css';
 import { useParams } from 'react-router-dom';
 import React, { useState } from 'react';
+import VectorUp from '../../assets/VectorUp.svg'
+import VectorDown from '../../assets/VectorDown.svg'
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'  //import FontAwesome REACT
-import {faChevronUp} from '@fortawesome/free-solid-svg-icons';
-import {faChevronDown} from '@fortawesome/free-solid-svg-icons';
+
 
 function Collapse() {
 
@@ -22,7 +23,7 @@ return (
       <div className='blocCollapsible'>
           <div type="button" className="collapsible" onClick={() => handleCollapsibleClick(0)}>
               <h2>Fiabilite</h2>
-              <FontAwesomeIcon icon={collapsed[0] ? faChevronUp : faChevronDown} />
+              <img src={collapsed[0] ? VectorUp : VectorDown} alt="Arrow" />
           </div>
           <div className={`content ${collapsed[0] ? 'active' : ''}`}>
               <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>
@@ -31,7 +32,7 @@ return (
       <div className='blocCollapsible'>
           <div type="button" className="collapsible" onClick={() => handleCollapsibleClick(1)}>
               <h2>Respect</h2>
-              <FontAwesomeIcon icon={collapsed[1] ? faChevronUp : faChevronDown} />
+              <img src={collapsed[1] ? VectorUp : VectorDown} alt="Arrow" />
           </div>
           <div className={`content ${collapsed[1] ? 'active' : ''}`}>
               <p>La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme.</p>
@@ -40,7 +41,7 @@ return (
       <div className='blocCollapsible'>
           <div type="button" className="collapsible" onClick={() => handleCollapsibleClick(2)}>
               <h2>Service</h2>
-              <FontAwesomeIcon icon={collapsed[2] ? faChevronUp : faChevronDown} />
+              <img src={collapsed[2] ? VectorUp : VectorDown} alt="Arrow" />
           </div>
           <div className={`content ${collapsed[2] ? 'active' : ''}`}>
               <p>Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question..</p>
@@ -49,7 +50,7 @@ return (
       <div className='blocCollapsible'>
           <div type="button" className="collapsible" onClick={() => handleCollapsibleClick(3)}>
               <h2>Sécurité</h2>
-              <FontAwesomeIcon icon={collapsed[3] ? faChevronUp : faChevronDown} />
+              <img src={collapsed[3] ? VectorUp : VectorDown} alt="Arrow" />
           </div>
           <div className={`content ${collapsed[3] ? 'active' : ''}`}>
               <p>La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes..</p>
