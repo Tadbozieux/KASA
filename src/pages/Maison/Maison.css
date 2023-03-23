@@ -1,0 +1,90 @@
+.accomodation{
+    color: rgba(255, 96, 96, 1);
+    width: 100%;
+}
+
+.accomodation button{
+    
+background-color:rgba(255, 96, 96, 1) ;
+color: white;
+cursor:pointer;
+border-radius: 10px;
+font-size: 15px;
+padding: 0 15px 0 15px;
+margin-right: 10px;
+height: 30px;
+width: auto;
+border: none;
+}
+
+.accomodation_content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:20px;
+
+}
+
+.accomodation_content_infos_button{
+    display: flex;
+    align-items: center;
+    height: 35px;
+    
+    
+   
+}
+
+
+
+.accomodation_content_hostnameimg{
+    display: flex;
+    justify-content: flex-end;
+}
+.accomodation_content_host_name{
+    display: flex;
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 1%;
+    
+}
+.accomodation_content_host_name p{
+    margin: 0;
+    font-size: 18px;
+}
+
+
+.accomodation_content_infos{
+    width: 50%;
+
+}
+
+.accomodation_content_host
+{
+    width: 50%;
+    text-align: right;
+
+}
+
+.img_host{
+    border-radius: 75px;
+    height: 75px;
+}
+
+.accomodation_content_host_stars img{
+    padding-left: 2px;
+}
+
+
+.houseCollapses{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    
+}
+
+.houseDetails{
+    width: 48%;
+}
+.customCollapse{
+    justify-content: end;
+}

@@ -8,7 +8,7 @@ function Gallery() {
       <div className='home_gallery'>
         {datas.map(data => {
           return (
-            <div key={data.id}>
+            <div className='cardMother' key={data.id}>
               <Link to={`/gallery/${data.id}`}>
                 <Card
                   id={data.id}

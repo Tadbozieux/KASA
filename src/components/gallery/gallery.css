@@ -3,4 +3,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    padding:50px;
+    background-color: #F7F7F7;
+    border-radius: 50px;
+    gap: 30px;  /*permet d'espacer les card tout en concernvant justifiy-c en center*/
+}
+
+.cardMother{
+    width: 30%;
 }

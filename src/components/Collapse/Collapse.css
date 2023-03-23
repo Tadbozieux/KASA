@@ -1,15 +1,18 @@
 .totalCollapsible{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .blocCollapsible{
-  width: 100%;
+  width: 80%;
   margin-bottom: 20px;
 }
 
 
 .collapsible {
-  width: 80%;
+  
   height: auto;
     background-color: rgba(255, 96, 96, 1);
     color: #444;
@@ -30,29 +33,31 @@
     margin: 0;
   }
   
-  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) 
-  .active, .collapsible:hover {
-    background-color: rgb(250, 110, 110);;
-  }*/
+   
   
   /* Style the collapsible content. Note: hidden by default */
   .content {
-    width: 80%;
+    
     max-height: 0;
     overflow: hidden;
-  transition: max-height 0.3s ease-out;
-     margin: auto;
+  transition: max-height 0.7s ease-out;
+     
     padding: 0 18px;
-
-   
     background-color: #f1f1f1;
     color: rgb(255, 144, 144);
     font-size: 1.5rem; 
   }
 
   .content.active {
-    max-height: 500px; /* ou une valeur suffisamment grande pour afficher tout le contenu */
+    max-height: 500px; 
     transition: max-height 0.3s ease-in;
+    height: auto;
+    padding: 0;
+    margin: auto;
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
   }
 
   .incone{

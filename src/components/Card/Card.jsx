@@ -30,20 +30,5 @@ Card.propTypes = {
 Card.defaultProps = {
     title: 'Mon titre par défaut',
 }
-// const CardWrapper = styled.div`
-    
-//     display: flex;
-//     flex-direction: column;
-//     padding: 15px;
-//     background:linear-gradient(180deg,  rgba(255,110,110,1) 0%,  rgba(214,55,55,1) 75%, rgba(149,81,81,1) 100%); 
-//     border-radius: 8px;
-//     width: 350px;
-//     margin:15px;
-//     height: 300px;
-//     transition: 200ms;
-//     &:hover {
-//         cursor: pointer;
-//         box-shadow: 2px 2px 10px #e2e3e9;
-//     }
-// `
+
 export default Card

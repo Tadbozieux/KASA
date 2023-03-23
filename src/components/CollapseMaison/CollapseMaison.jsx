@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import VectorUp from "../../assets/VectorUp.svg";
 import VectorDown from "../../assets/VectorDown.svg";
-// import "./CustomCollapse.css";
+import "./CollapseMaison.css";
 
 function CollapseMaison({ title, content }) {
   const [collapsed, setCollapsed] = useState(false);
@@ -17,7 +17,7 @@ function CollapseMaison({ title, content }) {
       <div className="blocCollapsible">
         <div
           type="button"
-          className="collapsible"
+          className="collapsible2"
           onClick={() => handleCollapsibleClick()}
         >
           <h2>{title}</h2>

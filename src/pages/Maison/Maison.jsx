@@ -2,7 +2,7 @@ import React from "react"
 
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react"
-// import "./Houses.css"
+import "./Maison.css"
 import datas from '../../data/data'
 import Carrousel from "../../components/Carrousel/Carrousel"
 import Footer from '../../components/footer/Footer';
@@ -36,7 +36,7 @@ export default function Accomodation() {
 					<div className="accomodation_content_infos">
 						<h1>{dataCurrentAccomodation[0].title}</h1>
 						<p>{dataCurrentAccomodation[0].location}</p>
-						<div>
+						<div className="accomodation_content_infos_button">
 							{dataCurrentAccomodation[0].tags.map((tag, index) => {
 								return (
 									<button key={index}>{tag}</button>
@@ -45,12 +45,12 @@ export default function Accomodation() {
 						</div>
 					</div>
 					<div className="accomodation_content_host">
-						<div>
+						<div className="accomodation_content_hostnameimg">
 							<div className='accomodation_content_host_name'>
-								<span>{name[0]}</span>
-								<span>{name[1]}</span>
+								<p>{name[0]}</p>
+								<p>{name[1]}</p>
 							</div>
-							<img src={dataCurrentAccomodation[0].host.picture} alt="host of this accomodation" />
+							<img className='img_host'   src={dataCurrentAccomodation[0].host.picture} alt="host of this accomodation" />
 						</div>
 							
 						<div className="accomodation_content_host_stars">
