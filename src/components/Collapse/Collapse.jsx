@@ -1,5 +1,5 @@
 import './Collapse.css';
-import '../../App.css';
+// import '../../App.css';
 
 import React, { useState } from 'react';
 import VectorUp from '../../assets/VectorUp.svg'
@@ -17,7 +17,7 @@ function Collapse() {
       setCollapsed(newCollapsed);
     };
   
-    const collapsibleContent = [
+    const collapsibleContent = [     //creation del'objet afin d'utiliser .map plutot que X4 les collapses
       {
         title: "Fiabilité",
         content:
@@ -40,14 +40,14 @@ function Collapse() {
       },
     ];
   
-    return (
+    return (       // pour chaque collapse creation d'un bloc
       <div className="totalCollapsible">
         {collapsibleContent.map((item, index) => (
           <div className="blocCollapsible" key={index}>
             <div
               type="button"
               className="collapsible"
-              onClick={() => handleCollapsibleClick(index)}
+              onClick={() => handleCollapsibleClick(index)}      // au click fonction handleCollapsibleClick avec indice
             >
               <h2>{item.title}</h2>
               <img src={collapsed[index] ? VectorUp : VectorDown} alt="Arrow" />

@@ -5,9 +5,9 @@ import { useState } from 'react'
 
 export default function Slider({imageSlider}) {
 
-    const [currentIndex, setCurrentIndex] = useState(0)
+    const [currentIndex, setCurrentIndex] = useState(0)          //tableau imageSlider avec indice
 
-    const nextSlide = () => {
+    const nextSlide = () => {    // nextSlide et prevSlide permettent de déplacer l'indice 
         setCurrentIndex(currentIndex + 1)
         if(currentIndex === imageSlider.length - 1)
             setCurrentIndex(0)
