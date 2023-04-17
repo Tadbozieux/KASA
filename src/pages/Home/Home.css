@@ -14,3 +14,17 @@
     overflow: hidden;
     transition : box-shadow 0.2s ease-in-out;
 }
+
+@media screen and (max-width: 400px) {
+    
+    .body{
+        width: 100%;
+        padding: 0;
+    }
+    
+    .home_gallery {
+      display: flex;
+      flex-direction: column;
+    }
+
+  }

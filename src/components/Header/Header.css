@@ -40,3 +40,67 @@
     color: #FF6060;
     
 }
+
+/* Media Queries pour la responsivité */
+@media screen and (max-width: 768px) {
+    .navcss a {
+        font-size: 1.6rem;
+    }
+
+    .navcss {
+        font-size: 1.6rem;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .headercss {
+        display: flex;
+        padding: 0;
+    }
+
+    .headercss a {
+        margin: auto;
+        height: 40px;
+        width: 50%;
+    }
+
+    .logo-Header {
+        margin: auto;
+        height: 100%;
+    }
+
+    .navcss {
+        display: flex;
+        width: 80%;
+        height: 40px;
+        justify-content: end;
+       
+    }
+
+    .navcss ul {
+        margin: 0;
+        width: 80%;
+        
+        
+    }
+
+    .navcss li {
+        display: flex;
+        width: 40%;
+        margin: auto;
+        height: 30px;
+    }
+
+    .navcss li a {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    .navcss a {
+        font-size: 1.4rem;
+    }
+}

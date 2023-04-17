@@ -26,3 +26,42 @@
     top: 3.5rem;
    margin: auto;
 }
+
+/* Media Queries pour la responsivité */
+@media (max-width: 1024px) {
+    .bannieretittle {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banniere {
+        height: 150px;
+    }
+
+    .banniereimg {
+        max-height: 150px;
+    }
+
+    .bannieretittle {
+        font-size: 36px;
+        
+    }
+}
+
+@media (max-width: 480px) {
+    .banniere {
+        height: 100px;
+    }
+
+    .banniereimg {
+        max-height: 100px;
+        object-position: center; /* Changement de la position de l'objet pour mieux adapter l'image */
+    }
+
+    .bannieretittle {
+        font-size: 20px; 
+        top: 2.5rem;
+        padding: 0 
+    }
+}

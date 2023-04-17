@@ -12,3 +12,11 @@
 .cardMother{
     width: 30%;
 }
+
+
+@media screen and (max-width: 400px) {
+    
+    .cardMother{
+        width: 100%;
+    }
+  }
