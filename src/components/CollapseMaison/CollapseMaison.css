@@ -19,3 +19,57 @@
     width: auto;
     height: 230px;
 }
+
+
+@media screen and (max-width: 768px) {
+
+  .houseCollapses{
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  .houseDetails{
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .blocCollapsible2{
+    width: 100%;
+    margin: 0;
+    align-items: start;
+  }
+
+  .content2  {
+    justify-content: start;
+    list-style-type: none;
+    
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .accomodation_content_host{
+    margin-top: 15px;
+  }
+
+  .img_host{
+    height: 50px;
+  }
+
+
+  .accomodation_content_host_stars{
+    width: 40%;
+    align-items: center;
+  }
+  .accomodation_content_host_stars img{
+
+    height: 30%;
+  }
+
+}

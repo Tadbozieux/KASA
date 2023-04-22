@@ -88,3 +88,42 @@ border: none;
 .customCollapse{
     justify-content: end;
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .accomodation_content{
+        flex-direction: column;
+    }
+    .accomodation_content h1{
+        margin: 0;
+    }
+
+    .accomodation_content_infos{
+        width: 100%;
+    }
+    .accomodation_content_host
+    {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .accomodation_content_host_stars{
+        display: flex;
+
+    }
+
+    .accomodation_content_hostnameimg{
+        width: 60%;
+        
+    }
+    .accomodation_content_host_name{
+        width: 50%;
+        padding-right: 20px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+}

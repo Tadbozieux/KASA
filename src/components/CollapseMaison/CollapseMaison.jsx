@@ -14,7 +14,7 @@ function CollapseMaison({ title, content }) {
 
   return (
     <div className="customCollapse">
-      <div className="blocCollapsible">
+      <div className="blocCollapsible2">
         <div
           type="button"
           className="collapsible2"
