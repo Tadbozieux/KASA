@@ -30,7 +30,7 @@ root.render(
                 <Route exact path="/" element={<Home />}/>
                 <Route path="Apropos" element={<Apropos />} />
                 <Route path="/Gallery/:id" element={<Maison />} />
-                <Route path="*" element={<Home/>}/> 
+                <Route path="*" element={<Error/>}/> 
             </Routes>
     </Router>
 </React.StrictMode>

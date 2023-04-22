@@ -37,6 +37,7 @@
 @media (max-width: 768px) {
     .banniere {
         height: 150px;
+        margin-bottom: 20px;
     }
 
     .banniereimg {

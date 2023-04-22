@@ -4,7 +4,7 @@ import './Banniere2.css'
 
 function Banniere2(){
     return(
-        <div className='banniere'>
+        <div className='banniere2'>
             <img className='banniereimg' src={MaskGroup2} alt='masque'/>
         </div>
     )

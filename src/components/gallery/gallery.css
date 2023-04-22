@@ -14,9 +14,20 @@
 }
 
 
-@media screen and (max-width: 400px) {
-    
+
+
+
+  /* Media Queries pour la responsivité */
+@media screen and (max-width: 768px) {
+
+    .home_gallery{
+        padding: 0;
+    }
+
     .cardMother{
         width: 100%;
-    }
-  }
+}
+}
+
+@media screen and (max-width: 480px) {
+}
