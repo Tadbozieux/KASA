@@ -3,6 +3,7 @@
     flex-direction: column;
     background-color: black;
     height: 200px;
+    margin-top: 5%;
 }
 
 .logoFooter{
@@ -21,7 +22,7 @@
 @media screen and (max-width: 768px) {
     .footer{
         height: auto;
-        margin-top: 15px;
+        
     }
     .logoFooter{
         height: 40px;
