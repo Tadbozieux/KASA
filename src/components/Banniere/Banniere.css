@@ -27,7 +27,7 @@
    margin: auto;
 }
 
-/* Media Queries pour la responsivité */
+/*--------------------responsive------------------------------*/
 @media (max-width: 1024px) {
     .bannieretittle {
         font-size: 48px;
@@ -66,3 +66,5 @@
         padding: 0 
     }
 }
+
+/*--------------------responsive------------------------------*/

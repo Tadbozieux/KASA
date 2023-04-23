@@ -73,21 +73,22 @@
     background-color: red;
   }
 
+/*--------------------responsive------------------------------*/
 
   @media screen and (max-width: 480px) {
     .content{
       font-size: 1rem;
     }
-    .banniere2{
-      height: auto;
+  
+
+    .totalCollapsible{
+        width: 100%;
+        align-items: start;
+    }
+
+    .blocCollapsible{
+        width: 100%;
+    }
   }
 
-  .totalCollapsible{
-      width: 100%;
-      align-items: start;
-  }
-
-  .blocCollapsible{
-      width: 100%;
-  }
-  }
+  /*--------------------responsive------------------------------*/

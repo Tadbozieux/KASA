@@ -17,22 +17,24 @@
 
 
 
-  /* Media Queries pour la responsivité */
+/*--------------------responsive------------------------------*/
 @media screen and (max-width: 768px) {
 
-    .home_gallery{
-        padding: 0;
+        .home_gallery{
+            padding: 0;
+        }
+
+        .cardMother{
+            width: 100%;
+    }
     }
 
-    .cardMother{
-        width: 100%;
-}
+    @media screen and (max-width: 480px) {
+        .cardMother a{
+            display: flex;
+            flex-direction: column;
+            height: 200px;
+    }
 }
 
-@media screen and (max-width: 480px) {
-    .cardMother a{
-        display: flex;
-        flex-direction: column;
-        height: 200px;
-}
-}
+/*--------------------responsive------------------------------*/
