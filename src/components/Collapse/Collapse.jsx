@@ -17,7 +17,7 @@ function Collapse() {
       setCollapsed(newCollapsed);
     };
   
-    const collapsibleContent = [     //creation del'objet afin d'utiliser .map plutot que X4 les collapses
+    const collapsibleContent = [     //creation de l'objet afin d'utiliser .map plutot que X4 les collapses
       {
         title: "Fiabilité",
         content:

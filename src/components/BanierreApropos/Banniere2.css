@@ -17,6 +17,8 @@
 }
 
 
+/*--------------------responsive------------------------------*/
+
 @media screen and (max-width: 768px) {
 
     .banniere2{
@@ -27,5 +29,4 @@
 
 }
 
-@media screen and (max-width: 480px) {
-}
+/*--------------------responsive------------------------------*/

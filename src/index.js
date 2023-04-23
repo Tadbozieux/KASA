@@ -5,7 +5,7 @@ import Home from './pages/Home/Home'
 import Maison from './pages/Maison/Maison'
 import Apropos from './pages/Apropos/Apropos'
 import Header from './components/Header/Header'
-import Error from './components/Error/Error'
+import Error from '../src/pages/Error/Error'
 import { createGlobalStyle } from 'styled-components'
 import './index.css'
 

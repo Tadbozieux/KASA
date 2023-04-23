@@ -1,0 +1,47 @@
+.Error {
+    background-color: white;      /* fond blanc text rouge*/
+    color: #ff6060;
+  }
+  .Code-erreur {
+    width: 100%;
+    font-size: 300px;
+    font-weight: 1000;
+    text-align: center;
+    margin: auto;
+    
+  }
+  .Message-erreur {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .Retour-acceuil {
+    width: 100%;
+    font-weight: 500;
+    text-align: center;
+    margin: 150px auto;
+  }
+  .Retour-acceuil a {
+    color: #ff6060;
+    text-decoration: none;
+  }
+  
+
+/*--------------------responsive------------------------------*/
+
+  @media screen and (max-width: 550px) {
+    .Code-erreur {
+      font-size: 8rem;
+      margin-top: 150px;
+    }
+    .Message-erreur {
+      font-size: 1.5rem;
+    }
+    .Retour-acceuil {
+      font-size: 1rem;
+    }
+  }
+
+  /*--------------------responsive------------------------------*/

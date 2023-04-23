@@ -15,12 +15,7 @@
     margin: 43px 0 43px 0;
   }
   
-  @media screen and (max-width: 650px) {
-    .carousel {
-      height: 200px;
-      margin: 20px auto;
-    }
-  }
+  
   
   .carousel_arrow {
     position: absolute;
@@ -51,3 +46,13 @@
     font-weight: 500;
     font-size: clamp(14px, 2vw, 18px);
   }
+
+  /*--------------------responsive------------------------------*/
+
+  @media screen and (max-width: 650px) {
+    .carousel {
+      height: 200px;
+      margin: 20px auto;
+    }
+  }
+  /*--------------------responsive------------------------------*/

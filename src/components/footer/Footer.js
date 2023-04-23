@@ -1,6 +1,6 @@
 import "./footer.css"
-import logo from '../../../src/logoFooter.png'
-import C2020 from '../../../src/C2020.png'
+import logo from '../../../src/assets/logoFooter.png'
+import C2020 from '../../../src/assets/C2020.png'
 
 function footer(){
     return(
