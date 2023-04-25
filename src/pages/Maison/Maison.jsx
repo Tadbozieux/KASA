@@ -1,5 +1,4 @@
 import React from "react"
-
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react"
 import "./Maison.css"
@@ -12,7 +11,7 @@ import greystar from '../../assets/greystar.svg'
 
 export default function Accomodation() {
 	
-	const [imageSlider, setImageSlider] = useState([]);
+	const [imageSlider, setImageSlider] = useState([]);             //Hook permettant de preserver données
 
 	const idAccomodation = useParams('id').id;
 	const dataCurrentAccomodation = datas.filter(data => data.id === idAccomodation);
