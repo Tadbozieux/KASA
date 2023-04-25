@@ -8,8 +8,8 @@ function Gallery() {
       <div className='home_gallery'>
         {datas.map(data => {     //parcours du fichier datas, pour chaque accomodation creation d'une card
           return (
-            <div className='cardMother' key={data.id}>
-              <Link to={`/gallery/${data.id}`}>   
+            <div className='cardMother' key={data.id}>    
+              <Link to={`/gallery/${data.id}`}>       
                 <Card
                   id={data.id}
                   title={data.title}

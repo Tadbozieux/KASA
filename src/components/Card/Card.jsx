@@ -14,7 +14,7 @@ height: 250px;
 function Card({  title, cover }) {
     return (
         <div className='Card'> 
-            <CardImage src={cover} alt="freelance" />
+            <CardImage src={cover} alt="accomodation" />
             <span className='title'>{title}</span>
         </div>
     )
