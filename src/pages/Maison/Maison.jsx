@@ -30,14 +30,14 @@ export default function Accomodation() {
   const equipments = dataCurrentAccomodation[0].equipments;
 
   const collapsibleContentMaison = [
-    {
-      title: "Description",
-      content: description,
-    },
-    {
-      title: "Équipements",
-      content: equipments.join(", "),
-    },
+	{
+	  title: "Description",
+	  content: description,
+	},
+	{
+	  title: "Équipements",
+	  content: equipments,
+	},
   ];
 
   return (
@@ -82,7 +82,7 @@ export default function Accomodation() {
         </div>
         <div className="houseCollapses">
           <div className="houseDetails">
-            <Collapse collapsibleItems={collapsibleContentMaison} />
+		  <Collapse collapsibleItems={collapsibleContentMaison} className="row" />
           </div>
         </div>
       </main>

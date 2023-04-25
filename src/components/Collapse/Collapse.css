@@ -1,14 +1,12 @@
-.totalCollapsible{
-  display: flex;
+.totalCollapsible.column {
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
-.blocCollapsible{
-  width: 80%;
-  margin-bottom: 20px;
+.totalCollapsible.row {
+  flex-direction: row;
 }
+
+
 
 
 .collapsible {

@@ -31,9 +31,17 @@ border: none;
    
 }
 
+.blocCollapsible{
+    width: 582px;
+    margin-bottom: 20px;
+  }
+
 .totalCollapsible{
+    display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
+
 
 
 
@@ -85,7 +93,7 @@ border: none;
 }
 
 .houseDetails{
-    width: 48%;
+    width: 100%;
 }
 .customCollapse{
     justify-content: end;

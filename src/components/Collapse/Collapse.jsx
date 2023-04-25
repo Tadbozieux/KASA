@@ -8,7 +8,7 @@ import VectorDown from '../../assets/VectorDown.svg'
 
 
 
-function Collapse({ collapsibleItems  }) {
+function Collapse({ collapsibleItems, className }) {
     const [collapsed, setCollapsed] = useState(Array(4).fill(false));
   
     const handleCollapsibleClick = (index) => {
@@ -20,7 +20,7 @@ function Collapse({ collapsibleItems  }) {
 
   
     return (       // pour chaque collapse creation d'un bloc
-      <div className="totalCollapsible">
+      <div className={`totalCollapsible ${className}`}>
         {collapsibleItems .map((item, index) => (
           <div className="blocCollapsible" key={index}>
             <div
@@ -32,11 +32,19 @@ function Collapse({ collapsibleItems  }) {
               <img src={collapsed[index] ? VectorUp : VectorDown} alt="Arrow" />
             </div>
             <div className={`content ${collapsed[index] ? "active" : ""}`}>
+            {Array.isArray(item.content) ? (
+              <ul>
+                {item.content.map((element, i) => (
+                  <li key={i}>{element}</li>
+                ))}
+              </ul>
+            ) : (
               <p>{item.content}</p>
-            </div>
+            )}
           </div>
-        ))}
-      </div>
+        </div>
+      ))}
+    </div>
     );
   }
   
