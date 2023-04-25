@@ -28,9 +28,11 @@ border: none;
     display: flex;
     align-items: center;
     height: 35px;
-    
-    
    
+}
+
+.totalCollapsible{
+    flex-direction: row;
 }
 
 
