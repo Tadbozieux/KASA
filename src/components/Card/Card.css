@@ -101,6 +101,18 @@
     color: white;
 }
 
+.CardImage {
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
 /*--------------------responsive------------------------------*/
 
 @media screen and (max-width: 768px) {
