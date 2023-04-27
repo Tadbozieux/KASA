@@ -6,7 +6,12 @@
   flex-direction: row;
 }
 
-
+.customStyle {
+ text-align: center;
+  width: 80%; 
+  margin: auto;
+  margin-top: 20px;
+}
 
 
 .collapsible {

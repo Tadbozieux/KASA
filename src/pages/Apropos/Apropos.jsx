@@ -30,7 +30,7 @@ function Apropos() {
   return (
     <div className="body">
       <Banniere2 />
-      <Collapse collapsibleItems={collapsibleContentApropos} className="column" />
+      <Collapse collapsibleItems={collapsibleContentApropos} className="column" customStyle={true}/>
       <Footer />
     </div>
   );

@@ -8,7 +8,7 @@ import VectorDown from '../../assets/VectorDown.svg'
 
 
 
-function Collapse({ collapsibleItems, className }) {
+function Collapse({ collapsibleItems, className, customStyle  }) {
     const [collapsed, setCollapsed] = useState(Array(4).fill(false));
   
     const handleCollapsibleClick = (index) => {
@@ -22,7 +22,7 @@ function Collapse({ collapsibleItems, className }) {
     return (       // pour chaque collapse creation d'un bloc
       <div className={`totalCollapsible ${className}`}>
         {collapsibleItems.map((item, index) => (
-          <div className="blocCollapsible" key={index}>
+          <div className={`blocCollapsible ${customStyle ? "customStyle" : ""}`} key={index}>
             <div
               type="button"
               className="collapsible"
