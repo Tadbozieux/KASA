@@ -21,7 +21,7 @@ function Collapse({ collapsibleItems, className }) {
   
     return (       // pour chaque collapse creation d'un bloc
       <div className={`totalCollapsible ${className}`}>
-        {collapsibleItems .map((item, index) => (
+        {collapsibleItems.map((item, index) => (
           <div className="blocCollapsible" key={index}>
             <div
               type="button"

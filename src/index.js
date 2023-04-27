@@ -23,12 +23,12 @@ const GlobalStyle = createGlobalStyle`
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <React.StrictMode>
-    <Router>
+    <Router basename="/">
         <GlobalStyle/>
         <Header />
             <Routes>
-                <Route exact path="/" element={<Home />}/>
-                <Route path="Apropos" element={<Apropos />} />
+                <Route path="/" element={<Home />}/>
+                <Route path="/Apropos" element={<Apropos />} />
                 <Route path="/Gallery/:id" element={<Maison />} />
                 <Route path="*" element={<Error/>}/> 
             </Routes>
