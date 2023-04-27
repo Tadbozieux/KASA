@@ -82,7 +82,7 @@ export default function Accomodation() {
         </div>
         <div className="houseCollapses">
           <div className="houseDetails">
-		  <Collapse collapsibleItems={collapsibleContentMaison} className="row" />
+          <Collapse collapsibleItems={collapsibleContentMaison} className="row maison-totalCollapsible" />
           </div>
         </div>
       </main>

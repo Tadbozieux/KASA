@@ -51,8 +51,11 @@
 
   @media screen and (max-width: 650px) {
     .carousel {
-      height: 200px;
+      height: 255px;
       margin: 20px auto;
     }
   }
+
+
+  
   /*--------------------responsive------------------------------*/
