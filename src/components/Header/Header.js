@@ -5,7 +5,7 @@ import './Header.css';
 function Header() {
   return (
     <header className="headercss">
-      <Link to="/">
+      <Link to="/KASA/">
         <img className="logo-Header" src={logo} alt="logo de Kasa" />
       </Link>
       <nav className="navcss">
