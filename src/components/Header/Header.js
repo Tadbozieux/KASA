@@ -11,7 +11,7 @@ function Header() {
       <nav className="navcss">
         <ul>
           <li>
-            <Link to="/KASA">Accueil</Link>
+            <Link to="/KASA/">Accueil</Link>
           </li>
           <li>
             <Link to="/Apropos">A Propos</Link>
