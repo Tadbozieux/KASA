@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/KASA/static/css/main.6c4833ef.css",
-    "main.js": "/KASA/static/js/main.7a38bb48.js",
+    "main.js": "/KASA/static/js/main.bee7193a.js",
     "static/media/MaskGroup2.png": "/KASA/static/media/MaskGroup2.d88cd8c22e9541e34f78.png",
     "static/media/MaskGroup.png": "/KASA/static/media/MaskGroup.bb5beee555d0863f584f.png",
     "index.html": "/KASA/index.html",
@@ -10,10 +10,10 @@
     "static/media/greystar.svg": "/KASA/static/media/greystar.06dccca447400012db124c595a41e219.svg",
     "static/media/redstar.svg": "/KASA/static/media/redstar.325cf1d54d109e062e0d0468f6412f00.svg",
     "main.6c4833ef.css.map": "/KASA/static/css/main.6c4833ef.css.map",
-    "main.7a38bb48.js.map": "/KASA/static/js/main.7a38bb48.js.map"
+    "main.bee7193a.js.map": "/KASA/static/js/main.bee7193a.js.map"
   },
   "entrypoints": [
     "static/css/main.6c4833ef.css",
-    "static/js/main.7a38bb48.js"
+    "static/js/main.bee7193a.js"
   ]
 }
